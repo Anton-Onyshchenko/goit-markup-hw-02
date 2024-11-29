@@ -1,170 +1,115 @@
-/* Font face */
-
-@font-face {
-    font-family:"Robot",sans-serif ;
-    src: url(../fonts/Roboto-Bold.ttf) format('truetype');
-    font-weight: 700;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "Robot", sans-serif;
-    src: url(../fonts/Roboto-Medium.ttf) format('truetype');
-    font-weight: 500;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "Robot", sans-serif;
-    src: url(../fonts/Roboto-Regular.ttf) format('truetype');
-    font-weight: 400;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "Raleway", sans-serif;
-    src: url(../fonts/Raleway-VariableFont_wght.ttf) format('truetype');
-    font-weight: 700;
-    font-style: normal;
-}
-
-/* CSS varaables */
-
-:root{
-    --font-family: "Roboto", sans-serif;
-    --second-family: "Raleway", sans-serif;
-    --text-color: #434455;
-}
-
-
-/* Genral style */
+/* Basic class */
 
 body{
-    font-family: var(--font-family);
-    font-size: 1em;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--text-color);
+    font-family: "Roboto",sans-serif;
+    font-size: 16px;
+    color: #434455;
     background-color: #FFFFFF;
-    margin: 0;
-}
-
-ul,ol{
-    list-style-type: none;
-}
-
-a{
-    text-decoration: none;
-}
-
-h1,h2,h3,h4,h5,h6{
-    margin: 0;
 }
 
 
-/* Basic style */
 
-section:not(:first-child){
-    padding: 120px 0;
-    margin: 0 auto;
-}
+/* General style */
 
-.container{
-    padding: 0 15px;
-    margin: 0 auto;
-    width: 1128px;
-}
-
-.site-logo{
-    font-family: "Raleway",sans-serif;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #4D5AE5;
-    font-size: 1.13em;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-}
 
 .section-title{
-    font-size: 2.25em;
+    font-size: 36px;
     line-height: 1.11;
-    color: #2E2F42;
-    letter-spacing: 0.02em;
     text-align: center;
-    margin-bottom: 72px;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color:#2e2f42;
 }
 
-.section-title-secondary{
+.section-list-title{
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
+    letter-spacing: 0.02em;
+    color:#2e2f42;
+
 }
 
+.section-list-text{
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color:#434455;
 
-/* Header section style */
-
-.site-menu-link{
- color:#2E2F42;
-}
-.site-logo-header{
-    color: #2E2F42;
 }
 
-.address-list-link{
+/* Header section styles */
+
+.web-site-logo{
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color:#4d5ae5;
+}
+
+.web-site-logo-header{
+    color:#2e2f42;
+}
+
+.web-site-menu-link{
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color:#2e2f42;
+}
+
+.web-site-menu-link:hover, .web-site-menu-link:focus{
+    color: #404bbf;
+}
+
+.web-site-address{
+    font-style: normal;
+}
+
+.web-site-address-list-link{
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
     color:#434455;
 }
 
-/* Hero section style */
-
-.hero-section {
-    background-color: #2E2F42;
-    padding: 188px 0;
+.web-site-address-list-link:hover,
+.web-site-address-list-link:focus {
+    color: #404bbf;
 }
 
-.hero-container{
-    margin: 0 auto;
-    width: 496px;
-    text-align: center;
-}
+/* Hero section styles */
 
-.hero-title{
-    font-size: 3.5em;
+.hero-section-title{
+    font-size: 56px;
     line-height: 1.07;
-    color:#FFFFFF;
-    margin-bottom: 48px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #fff;
 }
 
-.hero-button{
-    padding: 16px 32px;
-    font-size: 16px;
-    font-weight: 500;
-    letter-spacing: 0.04em;
-    text-wrap: nowrap;
-    width: 169px;
-    margin: 0 auto;
-    color:#FFFFFF;
+.hero-section-button{
     background-color: #4D5AE5;
-    border-radius: 4px;
-    
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #fff;
+    cursor: pointer;
 }
 
-/* Team section */
-
-.team-section{
-    background-color: #F4F4FD;
+.hero-section-button:hover, .hero-section-button:focus{
+    background-color: #404BBF;
 }
 
-/* Footer section */
+/* Our Features section styles */
 
-.footer{
-    background-color: #2E2F42;
-}
+/* Our Team section styles */
 
-.footer-container{
-    padding: 100px 0 100px 15px;
-    color: #F4F4FD;
-    width: 264px;
-}
-.site-logo-footer{
-    color: #F4F4FD;
+.our-team-list-item{
+background-color: #FFFFFF
 }
