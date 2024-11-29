@@ -1,0 +1,170 @@
+/* Font face */
+
+@font-face {
+    font-family:"Robot",sans-serif ;
+    src: url(../fonts/Roboto-Bold.ttf) format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Robot", sans-serif;
+    src: url(../fonts/Roboto-Medium.ttf) format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Robot", sans-serif;
+    src: url(../fonts/Roboto-Regular.ttf) format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Raleway", sans-serif;
+    src: url(../fonts/Raleway-VariableFont_wght.ttf) format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* CSS varaables */
+
+:root{
+    --font-family: "Roboto", sans-serif;
+    --second-family: "Raleway", sans-serif;
+    --text-color: #434455;
+}
+
+
+/* Genral style */
+
+body{
+    font-family: var(--font-family);
+    font-size: 1em;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+    background-color: #FFFFFF;
+    margin: 0;
+}
+
+ul,ol{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+
+
+/* Basic style */
+
+section:not(:first-child){
+    padding: 120px 0;
+    margin: 0 auto;
+}
+
+.container{
+    padding: 0 15px;
+    margin: 0 auto;
+    width: 1128px;
+}
+
+.site-logo{
+    font-family: "Raleway",sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #4D5AE5;
+    font-size: 1.13em;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+}
+
+.section-title{
+    font-size: 2.25em;
+    line-height: 1.11;
+    color: #2E2F42;
+    letter-spacing: 0.02em;
+    text-align: center;
+    margin-bottom: 72px;
+}
+
+.section-title-secondary{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+
+/* Header section style */
+
+.site-menu-link{
+ color:#2E2F42;
+}
+.site-logo-header{
+    color: #2E2F42;
+}
+
+.address-list-link{
+    color:#434455;
+}
+
+/* Hero section style */
+
+.hero-section {
+    background-color: #2E2F42;
+    padding: 188px 0;
+}
+
+.hero-container{
+    margin: 0 auto;
+    width: 496px;
+    text-align: center;
+}
+
+.hero-title{
+    font-size: 3.5em;
+    line-height: 1.07;
+    color:#FFFFFF;
+    margin-bottom: 48px;
+}
+
+.hero-button{
+    padding: 16px 32px;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    text-wrap: nowrap;
+    width: 169px;
+    margin: 0 auto;
+    color:#FFFFFF;
+    background-color: #4D5AE5;
+    border-radius: 4px;
+    
+}
+
+/* Team section */
+
+.team-section{
+    background-color: #F4F4FD;
+}
+
+/* Footer section */
+
+.footer{
+    background-color: #2E2F42;
+}
+
+.footer-container{
+    padding: 100px 0 100px 15px;
+    color: #F4F4FD;
+    width: 264px;
+}
+.site-logo-footer{
+    color: #F4F4FD;
+}
