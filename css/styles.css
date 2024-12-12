@@ -9,6 +9,14 @@ body{
     letter-spacing: 0.02em;
 }
 
+a{
+    text-decoration: none;
+}
+
+ul,ol{
+    list-style-type: none;
+}
+
 /* General style */
 
 .section-title{
